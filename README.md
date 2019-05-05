@@ -44,7 +44,9 @@ ORDER BY clicks DESC LIMIT 1
 ### 4. Which ad creative is the most effective in terms of generating leads?
 
 ```
-SELECT ad_creative_id, COUNT(DISTINCT lead_id) leads FROM single_table WHERE ad_creative_id > 0 
+SELECT ad_creative_id, COUNT(DISTINCT lead_id) leads 
+FROM single_table 
+WHERE ad_creative_id > 0 
 GROUP BY ad_creative_id  
 ORDER BY leads DESC LIMIT 1
 ```
