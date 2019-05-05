@@ -58,4 +58,14 @@ ORDER BY leads DESC LIMIT 1
 ```
 
 #### `Ad creative: 20003 - Leads: 1002`
-           
+
+## Extra questions
+
+#### What would you suggest to process new incoming files several times a day?
+  Disponibiliza-los em um diretório pré determinado onde alguma ferramenta consiga identificar e manipula-los automáticamente.
+#### What would you suggest to process new incoming data in near real time?
+  Talvez um processamento via streaming como a presente no Apache.
+#### What would you suggest to process data that is much bigger?
+  Utilizar ferramentas análiticas de Big Data como o Hadoop e banco de dados NoSQL.
+#### What would you suggest to process data much faster?
+  Utilizando processamento nas nuvens.
