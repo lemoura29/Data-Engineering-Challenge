@@ -5,6 +5,8 @@
 
 Faça download da solução e abra em alguma IDE. Eu utilizei o PyCharm. 
 Execute o arquivo **challenge.py**, nele estão as principais funcionalidades da solução.
+Ao executar ele irá ler os arquivos, salvá-los em tabelas, criar uma única tabela e dará as repostas das 4 questões solicitadas.
+O banco foi criado e manipulado utilizando SQLite.
 
 ## Answers
 
