@@ -1,20 +1,20 @@
 
-#Creditas Data Engineering Challenge
-
+# Creditas Data Engineering Challenge
 
 ## Answers
 
 
 ### 1. What was the most expensive campaign?
 
-``` SELECT campaign_id, SUM(cost) AS cost 
+``` 
+SELECT campaign_id, SUM(cost) AS cost 
 FROM 
 	(SELECT campaign_id, cost FROM single_table GROUP BY campaign_id, cost) AS a 
 GROUP BY campaign_id 
 ORDER BY cost DESC LIMIT 1
 ```
 
-Campaign: 1004 cost: 15.626,58
+#### `Campaign: 1004 cost: 15.626,58
 
 2. What was the most profitable campaign?
 
