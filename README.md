@@ -1,8 +1,12 @@
 
 # Creditas Data Engineering Challenge
 
-## Answers
+## Instructions
 
+Faça download da solução e abra em alguma IDE. Eu utilizei o PyCharm. 
+Execute o arquivo **challenge.py**, nele estão as principais funcionalidades da solução.
+
+## Answers
 
 ### 1. What was the most expensive campaign?
 
