@@ -21,7 +21,7 @@ ORDER BY cost DESC LIMIT 1
 ```
 SELECT campaign_id, SUM(lucro) lucro 
 FROM 
-	(SELECT campaign_id, (SUM(revenue)-cost) lucro FROM single_table GROUP BY campaign_id, cost) AS a 
+  (SELECT campaign_id, (SUM(revenue)-cost) lucro FROM single_table GROUP BY campaign_id, cost) AS a 
 GROUP BY campaign_id 
 ORDER BY lucro DESC LIMIT 1
 ```
@@ -34,7 +34,7 @@ ORDER BY lucro DESC LIMIT 1
 ```
 SELECT ad_creative_id, SUM(clicks) clicks 
 FROM 
-	(SELECT ad_creative_id, clicks FROM single_table WHERE ad_creative_id > 0 GROUP BY ad_creative_id, clicks) a 
+  (SELECT ad_creative_id, clicks FROM single_table WHERE ad_creative_id > 0 GROUP BY ad_creative_id, clicks) a 
 GROUP BY ad_creative_id 
 ORDER BY clicks DESC LIMIT 1
 ```
